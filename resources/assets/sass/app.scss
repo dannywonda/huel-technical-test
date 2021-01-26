@@ -1,0 +1,203 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.table th {
+    text-align: center;
+}
+
+.label-secondary {
+    background: #a4a4a4;
+}
+
+.tag {
+    margin: 5px;
+}
+
+//@extend-elements
+//original selectors
+//h3, h4
+%extend_1 {
+	margin: 10px 0 30px;
+	letter-spacing: 10px;
+	font-size: 20px;
+	color: $color_cod_gray_approx;
+}
+
+
+body {
+	font: 400 15px/1.8 Lato, sans-serif;
+	color: $color_boulder_approx;
+}
+h3 {
+	@extend %extend_1;
+}
+h4 {
+	@extend %extend_1;
+	background-color: $color_mine_shaft_approx;
+	color: $white !important;
+	text-align: center;
+	font-size: 30px;
+}
+.container {
+	padding: 80px 120px;
+}
+.person {
+	border: 10px solid transparent;
+	margin-bottom: 25px;
+	width: 80%;
+	height: 80%;
+	opacity: 0.7;
+	&:hover {
+		border-color: $seashell;
+	}
+}
+@media(max-width: 600px) {
+	.carousel-caption {
+		display: none;
+	}
+}
+.bg-1 {
+	background: $color_charade_approx;
+	color: $color_silver_approx;
+	h3 {
+		color: $white;
+	}
+	p {
+		font-style: italic;
+	}
+}
+.list-group-item {
+	&:first-child {
+		border-top-right-radius: 0;
+		border-top-left-radius: 0;
+	}
+	&:last-child {
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+}
+.thumbnail {
+	padding: 0 0 15px 0;
+	border: none;
+	border-radius: 0;
+	p {
+		margin-top: 15px;
+		color: $color_dorado_approx;
+	}
+}
+.btn {
+	padding: 10px 20px;
+	background-color: $color_mine_shaft_approx;
+	color: $seashell;
+	border-radius: 0;
+	transition: .2s;
+	&:hover {
+		border: 1px solid $color_mine_shaft_approx;
+		background-color: $white;
+		color: $black;
+	}
+	&:focus {
+		border: 1px solid $color_mine_shaft_approx;
+		background-color: $white;
+		color: $black;
+	}
+}
+.modal-header {
+	background-color: $color_mine_shaft_approx;
+	color: $white !important;
+	text-align: center;
+	font-size: 30px;
+	padding: 40px 50px;
+}
+.close {
+	background-color: $color_mine_shaft_approx;
+	color: $white !important;
+	text-align: center;
+	font-size: 30px;
+}
+.modal-body {
+	padding: 40px 50px;
+}
+#googleMap {
+	width: 100%;
+	height: 400px;
+	filter: grayscale(100%);
+}
+.navbar {
+	font-family: $font_0, $font_1;
+	margin-bottom: 0;
+	background-color: $color_charade_approx;
+	border: 0;
+	font-size: 11px !important;
+	letter-spacing: 4px;
+	opacity: 0.9;
+	.navbar-brand {
+		color: $color_alto_approx !important;
+	}
+	li a {
+		color: $color_alto_approx !important;
+	}
+}
+footer {
+	background-color: $color_charade_approx;
+	color: $color_wild_sand_approx;
+	padding: 32px;
+	a {
+		color: $color_wild_sand_approx;
+		&:hover {
+			color: $color_boulder_approx;
+			text-decoration: none;
+		}
+	}
+}
+.form-control {
+	border-radius: 0;
+}
+textarea {
+	resize: none;
+}
+.carousel-inner img {
+	filter: grayscale(90%);
+	width: 100%;
+	margin: auto;
+}
+.carousel-caption h3 {
+	color: $white !important;
+}
+.nav-tabs li a {
+	color: $color_boulder_approx;
+}
+.navbar-nav li {
+	a:hover {
+		color: $white !important;
+	}
+	&.active a {
+		color: $white !important;
+		background-color: $color_charade_approx !important;
+	}
+}
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+}
+.open .dropdown-toggle {
+	color: $white;
+	background-color: $color_dorado_approx !important;
+}
+.dropdown-menu li a {
+	color: $black !important;
+	&:hover {
+		background-color: $red !important;
+	}
+}
